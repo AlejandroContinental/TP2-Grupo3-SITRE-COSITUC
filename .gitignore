@@ -1,0 +1,174 @@
+# ==============================================================================
+# SITRE-COSITUC - Master .gitignore
+# Pila: Django REST Framework | React.js | Flutter | Antigravity / VS Code
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Sistema Operativo
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ------------------------------------------------------------------------------
+# 2. Entornos de Desarrollo / IDEs (VS Code, Antigravity, Visual Studio, JetBrains)
+# ------------------------------------------------------------------------------
+.vs/
+.metadata/
+obj/
+bin/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.code-workspace
+
+# Antigravity / VS Code (Ignorar settings de usuario pero permitir extensions.json si aplica)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-workspace
+*.sublime-project
+
+# JetBrains (PyCharm / WebStorm / Android Studio)
+.idea/
+*.iws
+*.iml
+out/
+
+# ------------------------------------------------------------------------------
+# 3. Backend: Python & Django REST Framework
+# ------------------------------------------------------------------------------
+# Byte-compiled / optimizados
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Entornos virtuales de Python
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Base de datos local y migraciones SQLite (desarrollo local)
+*.sqlite3
+db.sqlite3
+db.sqlite3-journal
+
+# Archivos estáticos y media recolectados localmente
+backend/staticfiles/
+backend/media/
+
+# Logs de Python / Django
+*.log
+celerybeat-schedule
+celerybeat.pid
+
+# Cobertura de pruebas (testing / pytest)
+.cache
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+
+# ------------------------------------------------------------------------------
+# 4. Frontend Web & Panel Gerencial: Node.js & React.js
+# ------------------------------------------------------------------------------
+# Dependencias
+node_modules/
+frontend/node_modules/
+jspm_packages/
+.npm/
+
+# Salidas de compilación (build / dist)
+dist/
+build/
+frontend/dist/
+frontend/build/
+
+# Logs de Node / Gestores de paquetes
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Cachés de herramientas React / Bundlers
+.eslintcache
+.cache/
+.parcel-cache/
+.next/
+
+# ------------------------------------------------------------------------------
+# 5. App Móvil & Tablet de Garita: Flutter / Dart
+# ------------------------------------------------------------------------------
+# Compilación y artefactos Flutter/Dart
+.dart_tool/
+mobile/.dart_tool/
+.packages
+.pub-cache/
+.pub/
+mobile/.pub/
+build/
+mobile/build/
+
+# Configuración generada automáticamente por Flutter
+.flutter-plugins
+.flutter-plugins-dependencies
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+
+# Android específico generado por Flutter
+mobile/android/.gradle
+mobile/android/captures/
+mobile/android/gradlew
+mobile/android/gradlew.bat
+mobile/android/local.properties
+mobile/android/**/GeneratedPluginRegistrant.java
+
+# iOS específico generado por Flutter
+mobile/ios/.symlinks/
+mobile/ios/Flutter/Flutter.framework
+mobile/ios/Flutter/Flutter.podspec
+mobile/ios/Flutter/Generated.xcconfig
+mobile/ios/Flutter/app.framework
+mobile/ios/**/GeneratedPluginRegistrant.h
+mobile/ios/**/GeneratedPluginRegistrant.m
+mobile/ios/Pods/
+
+# Claves de firmado y keystores móviles
+*.keystore
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
